@@ -56,7 +56,7 @@ export function AppSidebar() {
     <Sidebar className="border-r border-gray-200 bg-white">
       <SidebarHeader className="bg-white border-b border-gray-200">
         <div className="p-6">
-          <h2 className="text-xl font-bold text-green-700">Partner Admin</h2>
+          <h2 className="text-xl font-bold text-green-700">Company Admin</h2>
         </div>
       </SidebarHeader>
       <SidebarContent className="bg-white">

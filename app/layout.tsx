@@ -5,6 +5,7 @@ import { SidebarProvider } from "@/components/ui/sidebar"
 import { AppSidebar } from "@/components/app-sidebar"
 import { Toaster } from "@/components/ui/sonner"
 import "./globals.css"
+import Footer from "@/components/footer"
 
 const inter = Inter({ subsets: ["latin"] })
 
@@ -27,6 +28,8 @@ export default function RootLayout({
           <main className="flex-1 bg-gray-50 min-h-screen">{children}</main>
           <Toaster />
         </SidebarProvider>
+                {/* Footer */}
+        <Footer />
       </body>
     </html>
   )
