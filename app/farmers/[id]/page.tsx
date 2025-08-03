@@ -52,7 +52,7 @@ const FarmerDetailsPage = ({ params }: { params: { id: string } }) => {
     {
       id: "1",
       name: "Maize",
-      image: "https://images.unsplash.com/photo-1551754655-cd27e38d2076?w=200&h=200&fit=crop",
+      image: "/images/maize.jpeg",
       quantity: 8000,
       lastUpdated: "2024-01-15",
       pricePerKg: 2.3,
@@ -62,7 +62,7 @@ const FarmerDetailsPage = ({ params }: { params: { id: string } }) => {
     {
       id: "2",
       name: "Beans",
-      image: "https://images.unsplash.com/photo-1559181567-c3190ca9959b?w=200&h=200&fit=crop",
+      image: "/images/beans.jpeg",
       quantity: 2500,
       lastUpdated: "2024-01-14",
       pricePerKg: 3.2,
@@ -72,7 +72,7 @@ const FarmerDetailsPage = ({ params }: { params: { id: string } }) => {
     {
       id: "3",
       name: "Coffee",
-      image: "https://images.unsplash.com/photo-1447933601403-0c6688de566e?w=200&h=200&fit=crop",
+      image: "/images/coffee.jpeg",
       quantity: 1200,
       lastUpdated: "2024-01-13",
       pricePerKg: 5.5,
@@ -82,7 +82,7 @@ const FarmerDetailsPage = ({ params }: { params: { id: string } }) => {
     {
       id: "4",
       name: "Sweet Potato",
-      image: "https://images.unsplash.com/photo-1459411621453-7b03977f4bfc?w=200&h=200&fit=crop",
+      image: "/images/sweet-potato.jpeg",
       quantity: 3200,
       lastUpdated: "2024-01-12",
       pricePerKg: 1.8,

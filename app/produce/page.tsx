@@ -18,6 +18,21 @@ interface ProduceItem {
   category: string
 }
 
+const getProductImage = (productName: string): string => {
+  const imageMap: Record<string, string> = {
+    "Maize": "/images/maize.jpeg",
+    "Rice": "/images/rice.jpeg", 
+    "Coffee": "/images/coffee.jpeg",
+    "Beans": "/images/beans.jpeg",
+    "Wheat": "/images/wheat.jpeg",
+    "Cassava": "/images/cassava.jpeg",
+    "Sweet Potato": "/images/sweet-potato.jpeg",
+    "Bananas": "/images/banana.jpeg"
+  }
+  
+  return imageMap[productName] || "/placeholder.jpg"
+}
+
 const ProducePage = () => {
   const [searchTerm, setSearchTerm] = useState("")
   const [categoryFilter, setCategoryFilter] = useState("all")
@@ -27,7 +42,7 @@ const ProducePage = () => {
     {
       id: "1",
       name: "Maize",
-      image: "https://images.unsplash.com/photo-1551754655-cd27e38d2076?w=400&h=400&fit=crop",
+      image: getProductImage("Maize"),
       totalQuantity: 45000,
       farmerCount: 125,
       category: "Grains",
@@ -35,7 +50,7 @@ const ProducePage = () => {
     {
       id: "2",
       name: "Rice",
-      image: "https://images.unsplash.com/photo-1586201375761-83865001e31c?w=400&h=400&fit=crop",
+      image: getProductImage("Rice"),
       totalQuantity: 32000,
       farmerCount: 89,
       category: "Grains",
@@ -43,7 +58,7 @@ const ProducePage = () => {
     {
       id: "3",
       name: "Coffee",
-      image: "https://images.unsplash.com/photo-1447933601403-0c6688de566e?w=400&h=400&fit=crop",
+      image: getProductImage("Coffee"),
       totalQuantity: 15000,
       farmerCount: 67,
       category: "Cash Crops",
@@ -51,7 +66,7 @@ const ProducePage = () => {
     {
       id: "4",
       name: "Beans",
-      image: "https://images.unsplash.com/photo-1559181567-c3190ca9959b?w=400&h=400&fit=crop",
+      image: getProductImage("Beans"),
       totalQuantity: 28000,
       farmerCount: 156,
       category: "Legumes",
@@ -59,7 +74,7 @@ const ProducePage = () => {
     {
       id: "5",
       name: "Wheat",
-      image: "https://images.unsplash.com/photo-1574323347407-f5e1ad6d020b?w=400&h=400&fit=crop",
+      image: getProductImage("Wheat"),
       totalQuantity: 38000,
       farmerCount: 98,
       category: "Grains",
@@ -67,7 +82,7 @@ const ProducePage = () => {
     {
       id: "6",
       name: "Cassava",
-      image: "https://images.unsplash.com/photo-1518977676601-b53f82aba655?w=400&h=400&fit=crop",
+      image: getProductImage("Cassava"),
       totalQuantity: 52000,
       farmerCount: 203,
       category: "Root Crops",
@@ -75,7 +90,7 @@ const ProducePage = () => {
     {
       id: "7",
       name: "Sweet Potato",
-      image: "https://images.unsplash.com/photo-1459411621453-7b03977f4bfc?w=400&h=400&fit=crop",
+      image: getProductImage("Sweet Potato"),
       totalQuantity: 22000,
       farmerCount: 87,
       category: "Root Crops",
@@ -83,7 +98,7 @@ const ProducePage = () => {
     {
       id: "8",
       name: "Bananas",
-      image: "https://images.unsplash.com/photo-1571771894821-ce9b6c11b08e?w=400&h=400&fit=crop",
+      image: getProductImage("Bananas"),
       totalQuantity: 18000,
       farmerCount: 134,
       category: "Fruits",
