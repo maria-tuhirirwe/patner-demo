@@ -16,7 +16,7 @@ export default function Footer() {
             <span className="text-lg font-semibold text-gray-900">FromyFarm</span>
           </div>
           <div className="text-sm text-gray-600">
-            © 2025 FromyFarm. All rights reserved.
+            © 2025 FROMYFARM PYT LTD. All rights reserved.
           </div>
         </div>
       </div>
