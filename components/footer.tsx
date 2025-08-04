@@ -1,4 +1,4 @@
-import Image from "next/image"
+import Image from "next/image";
 
 export default function Footer() {
   return (
@@ -13,13 +13,15 @@ export default function Footer() {
               height={50}
               className="h-8 w-8"
             />
-            <span className="text-lg font-semibold text-gray-900">FromyFarm</span>
+            <span className="text-lg font-semibold text-gray-900">
+              FromyFarm
+            </span>
           </div>
           <div className="text-sm text-gray-600">
-            © 2025 FROMYFARM PYT LTD. All rights reserved.
+            © 2025 FROMYFARM (Pty) Ltd. All rights reserved.{" "}
           </div>
         </div>
       </div>
     </footer>
-  )
+  );
 }
