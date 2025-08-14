@@ -231,11 +231,11 @@ const Dashboard = () => {
   // Reports data based on selected period
   const getReportsData = () => {
     const baseData = {
-      users: 1323, // farmers + agents
-      farmers: 1234,
+      users: 11036, // farmers + agents
+      farmers: 10947,
       agents: 89,
       cooperatives: 45,
-      bids: 156,
+      bids: 312,
     }
 
     switch (reportPeriod) {
